@@ -56,21 +56,21 @@ typedef struct alsNode
 alstype *aliases;
 
 /* Main Helpers */
-//+copy getline functioof
+/*+copy getline functioof*/
 ssize_t fn_get_ln(char **ptrline, size_t *n, FILE *strm);
-//+copy ofrealloc function
+/*+copy ofrealloc function*/
 void *fn_reset_sz(void *ourptr, unsigned int sizeOld, unsigned int sizeNew);
-//+ copy of strtok function
+/*+ copy of strtok function*/
 char **parse_funct(char *ourline, char *ourdelim);
-//get+location function
+/*get+location function*/
 char *locate_funct(char *ourcmd);
-//get+path+dir function
+/*get+path+dir function*/
 lisType *direct_path(char *ourpath);
-//execute function needed
+/*execute function needed*/
 int func_exc(char **amgt, char **ourfront);
-//free the linked list
+/*free the linked list*/
 void func_freeList(lisType *head);
-//copy of itoa function
+/*copy of itoa function*/
 char *_itoa(int num);
 
 /* Input Helpers */
